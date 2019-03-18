@@ -4,7 +4,7 @@ A Docker image to run [shairport-sync](https://github.com/mikebrady/shairport-sy
 
 Tested on a Raspberry Pi 3 running Debian Jessie.
 
-[Dockerhub](https://hub.docker.com/r/evansalter/shairport-sync-docker-pi/): [![](https://images.microbadger.com/badges/version/evansalter/shairport-sync-docker-pi.svg)](https://microbadger.com/images/evansalter/shairport-sync-docker-pi "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/evansalter/shairport-sync-docker-pi.svg)](https://microbadger.com/images/evansalter/shairport-sync-docker-pi "Get your own image badge on microbadger.com") 
+[Dockerhub](https://hub.docker.com/r/pm6422/shairport-sync-docker-pi/): [![](https://images.microbadger.com/badges/version/pm6422/shairport-sync-docker-pi.svg)](https://microbadger.com/images/pm6422/shairport-sync-docker-pi "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/pm6422/shairport-sync-docker-pi.svg)](https://microbadger.com/images/pm6422/shairport-sync-docker-pi "Get your own image badge on microbadger.com") 
 
 # Usage
 
@@ -28,7 +28,7 @@ $ docker run -d \
             --name airplay \
             --net host \
             --device /dev/snd \
-            shairport-sync-docker-pi
+            pm6422/shairport-sync-docker-pi
 ```
 
 ---
