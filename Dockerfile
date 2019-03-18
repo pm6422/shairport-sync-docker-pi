@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
    libavahi-client-dev \
    libssl-dev
 
-RUN git clone https://github.com/mikebrady/shairport-sync.git
+RUN git clone https://github.com/pm6422/shairport-sync.git
 WORKDIR shairport-sync
 RUN autoreconf -i -f
 RUN ./configure --with-alsa --with-avahi --with-ssl=openssl --with-systemd --sysconfdir=/etc
