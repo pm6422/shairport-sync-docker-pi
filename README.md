@@ -11,24 +11,24 @@ Tested on a Raspberry Pi 3 running Debian Jessie.
 ## From Dockerhub (Recommended)
 
 ```sh
-$ docker run -d --restart always \
-                --name shairport \
-                --net host \
-                --device /dev/snd \
-                evansalter/shairport-sync-docker-pi
+$ docker run -d \
+            --name airplay \
+            --net host \
+            --device /dev/snd \
+            pm6422/shairport-sync-docker-pi
 ```
 
 ## Building from scratch
 
 ```sh
-$ git clone https://github.com/esalter-va/shairport-sync-docker-pi/
+$ git clone https://github.com/pm6422/shairplay-docker-pi.git/
 $ cd shairport-sync-docker-pi
 $ docker build . -t shairport-sync-docker-pi
-$ docker run -d --restart always \
-                --name shairport \
-                --net host \
-                --device /dev/snd \
-                shairport-sync-docker-pi
+$ docker run -d \
+            --name airplay \
+            --net host \
+            --device /dev/snd \
+            shairport-sync-docker-pi
 ```
 
 ---
