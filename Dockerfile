@@ -25,6 +25,7 @@ RUN make
 RUN make install
 
 RUN sed -i 's/rlimit-nproc=3//' /etc/avahi/avahi-daemon.conf
+RUN sed -i '7c name = "AirPlay Speaker";' /etc/shairport-sync.conf
 
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
