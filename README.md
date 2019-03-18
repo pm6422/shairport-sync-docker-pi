@@ -21,7 +21,7 @@ $ docker run -d \
 ## Building from scratch
 
 ```sh
-$ git clone https://github.com/pm6422/shairplay-docker-pi.git/
+$ git clone https://github.com/pm6422/shairport-sync-docker-pi.git/
 $ cd shairport-sync-docker-pi
 $ docker build . -t shairport-sync-docker-pi
 $ docker run -d \
